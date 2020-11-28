@@ -1,0 +1,31 @@
+.four .main {
+  font-size: 90px;
+  display: inline-block;
+  background: linear-gradient(to right, lime, #19a114);
+  color: transparent;
+  -webkit-background-clip: text;
+  transform: skewX(30deg); }
+
+.container {
+  position: relative; }
+  .container__photo {
+    width: 30%;
+    position: absolute;
+    transition: all .3s;
+    z-index: 10;
+    outline-offset: 1rem; }
+    .container__photo--p1 {
+      top: 0;
+      left: 0; }
+    .container__photo--p2 {
+      left: 20rem;
+      top: -3rem; }
+    .container__photo--p3 {
+      top: 4rem;
+      left: 15rem; }
+    .container__photo:hover {
+      outline: 5px solid green;
+      transform: scale(1.2);
+      z-index: 20; }
+  .container:hover .container__photo:not(:hover) {
+    transform: scale(0.85); }

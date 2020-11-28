@@ -1,0 +1,38 @@
+html {
+  font-size: 10px; }
+
+.five .icon-basic-world {
+  font-size: 5rem; }
+
+.five .skew_sec {
+  height: 10rem;
+  font-size: 4rem;
+  border: 3px solid red;
+  transform: skew(15deg); }
+
+.five .p_text > * {
+  font-size: 3rem; }
+
+.card {
+  position: relative;
+  perspective: 1500rem;
+  font-size: 4rem;
+  height: 30rem;
+  width: 50%; }
+  .card__side {
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all .5s; }
+    .card__side--front {
+      background-color: red; }
+    .card__side--back {
+      background-color: blue;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }

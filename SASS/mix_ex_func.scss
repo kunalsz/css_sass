@@ -1,0 +1,26 @@
+@import "var_nest.css";
+
+@mixin what($fon){
+    color: white;
+    background-color: black;
+    font-size: $fon;
+}
+
+@function some($arg,$argg){
+    @return $arg + $argg;
+}
+
+%btn{
+    text-decoration: none;
+    color: white;
+}
+
+.two{ 
+    @include what(25px);
+    padding: some(20,2 )*1px;
+
+    .why,.yes{
+        @extend %btn;
+    }
+}
+ 

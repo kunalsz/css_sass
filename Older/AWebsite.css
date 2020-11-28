@@ -1,0 +1,36 @@
+body{
+    margin-top: 40px;
+    margin-left: 40px;
+    background-image: url('how-to-create-gradient-article.jpg');
+    
+}
+.First{
+    border:4px dotted #ccc;
+    padding: 5px;
+    padding-top: 10px;
+}
+#about{
+    font-size: 50px;
+    text-align: center;
+}
+#photos{
+
+    font-size: 50px;
+    text-decoration: underline;
+}
+.showcase{
+    border: 5px solid grey;
+    padding-bottom: 10px;
+}
+.showcase img{
+    padding: 5px;
+    border: 4px solid black;
+    
+}
+#desc{
+    padding: 50px;
+}
+.Contact h3{
+    text-align: center;
+    font-size: 40px;
+}

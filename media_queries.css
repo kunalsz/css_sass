@@ -1,0 +1,7 @@
+.one {
+  height: 95vh;
+  background-color: red; }
+
+@media (max-width: 500px) {
+  .one {
+    background-color: blue; } }

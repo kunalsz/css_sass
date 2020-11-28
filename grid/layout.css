@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content repeat(3, 40vh);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr repeat(8, [colstart] min-content [colend]) 1fr [full-end]; }
+
+.sidebar {
+  background-color: red;
+  grid-row: 1/-1; }
+
+.top-1 {
+  background-color: cyan;
+  grid-column: full-start/colend 5; }
+
+.top-2 {
+  background-color: pink;
+  grid-column: colstart 6/full-end; }
+
+.reviews {
+  background-color: yellow;
+  padding: 10rem;
+  grid-column: colstart 1/ colend 8; }
+
+.services {
+  background-color: green;
+  padding: 10rem;
+  grid-column: colstart 1/ colend 8; }
+
+.footer {
+  background-color: blue;
+  grid-column: full-start/full-end; }

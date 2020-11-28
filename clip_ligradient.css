@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 20px;
+}
+
+.main{
+    background-image: linear-gradient(to right bottom,rgba(166, 255, 0, 0.6),rgba(0, 255, 98, 0.6)),url('./Assets_course/hero.jpg');
+    background-size: cover;
+    height: 95vh;
+    clip-path: polygon(0 0,100% 0,100% 70%,0 100%);
+}
+
+.t{
+    transform: translateX(100px);
+}

@@ -1,0 +1,14 @@
+.pop {
+  color: white;
+  opacity: 0;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .pop .text {
+    column-count: 2; }
+  .pop:target {
+    opacity: 1;
+    width: 100%; }

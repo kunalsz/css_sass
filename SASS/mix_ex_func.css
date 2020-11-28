@@ -1,0 +1,10 @@
+@import url(var_nest.css);
+.two .why, .two .yes {
+  text-decoration: none;
+  color: white; }
+
+.two {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  padding: 22px; }

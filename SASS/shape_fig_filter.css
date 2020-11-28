@@ -1,0 +1,14 @@
+.seven {
+  font-size: 20px; }
+  .seven .circle_shape {
+    background: red;
+    height: 80px;
+    width: 80px;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%); }
+  .seven .circle_text {
+    width: 40%; }
+  .seven .image_filter {
+    height: 200px;
+    filter: blur(10px); }

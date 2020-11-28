@@ -1,0 +1,15 @@
+.form1{
+    padding: 12px;
+}
+
+.form1 input[type="submit"]{
+    color: aqua;
+    background-color: blueviolet
+}
+
+.box{
+    box-sizing: border-box;
+    padding: 30px;
+    float: left;
+    border: 4px solid #ccc;
+}

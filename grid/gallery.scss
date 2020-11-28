@@ -1,0 +1,43 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    padding: 2rem;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.gallery{
+    display: grid;
+    height: 80vh;
+    width: 100%;
+    grid-template-columns: repeat(8,[colstart] 1fr [colend]);
+    grid-template-rows: repeat(8,[rowstart] 1fr [rowend]);
+
+    &-img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-1{
+        grid-row: rowstart 1/rowend 2;
+    }
+
+    .img-2{
+        grid-column: colstart 2/colend 4;
+        grid-row: rowstart 1/rowend 4;
+    }
+
+    .img-3{
+        grid-column: colend 4/colend 6;
+    }
+
+    ///SIMILARLY WE CAN DO WITH OTHERS........
+}

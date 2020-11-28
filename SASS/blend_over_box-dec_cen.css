@@ -1,0 +1,22 @@
+.six {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #13f313, #31b908), url("../Assets_course/hero.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+  position: relative; }
+  .six .clip_content {
+    height: 30px;
+    width: 30%;
+    overflow: hidden;
+    margin-bottom: 30px; }
+  .six .box_dec_br {
+    border: 2px solid red;
+    box-decoration-break: slice; }
+  .six .center_text {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

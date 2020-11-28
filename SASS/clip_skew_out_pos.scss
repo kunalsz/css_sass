@@ -1,0 +1,53 @@
+.four{
+
+    .main{
+        font-size: 90px;
+        display: inline-block;
+     
+        background: linear-gradient(to right,rgb(0, 255, 0),rgb(25, 161, 20));
+        color: transparent;
+        -webkit-background-clip: text;
+
+        transform: skewX(30deg);
+    }
+
+
+}
+
+.container{
+        position: relative;
+
+        &__photo{
+            width: 30%;
+            position: absolute;
+            transition: all .3s;
+            z-index: 10;
+            outline-offset: 1rem;
+
+            &--p1{
+                top: 0;
+                left: 0;
+            }
+            &--p2{
+                left: 20rem;
+                top: -3rem;
+                
+            }
+            &--p3{
+                top: 4rem;
+                left: 15rem;
+            }
+
+            &:hover{
+                outline: 5px solid green;
+                transform: scale(1.2);;
+                z-index: 20;
+            }
+
+            
+        }
+
+        &:hover &__photo:not(:hover){ // container:hover container__photo:not(:hover)
+            transform: scale(.85);
+        }
+}

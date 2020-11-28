@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="if_content.css">
+</head>
+<body>
+    <div class="one">
+        Hello
+    </div>
+    <div class="two">
+ <!--       <img srcset="Assets_course/logo-green-1x.png 1x, Assets_course/logo-green-2x.png 2x"> -->
+        <picture>
+            <source media="(max-width:500px)" srcset="Assets_course/logo-green-1x.png">
+            <img src="Assets_course/nat-2.jpg">
+        </picture>
+
+        <img srcset="Assets_course/nat-2.jpg 300w, Assets_course/nat-2-large.jpg 1000w"
+                    sizes="(max-width:500px) 50vw,100vw"
+        >
+    </div>
+</body>
+</html>

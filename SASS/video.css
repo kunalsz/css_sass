@@ -1,0 +1,18 @@
+.eight {
+  position: relative; }
+  .eight .video_main {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    z-index: -1; }
+  .eight .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 400px; }
+  .eight ::selection {
+    background-color: black;
+    color: white; }

@@ -1,0 +1,54 @@
+.main a:link,
+.main a:visited{
+    display: inline-block; /*THIS IS REQUIRED*/
+    text-decoration: none;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.2s;
+    animation-name: moveUp;
+    animation-duration: 2s;
+}
+
+.main a:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.555);
+}
+
+.main a:active{
+    transform: translateY(1px);
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.555);
+}
+
+.main a::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.main a:hover::after{
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+@keyframes moveUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.one{
+    font-weight: 500;
+    margin: 5%;
+}
+
+.two{
+    padding: 20px 10px;
+    border: grey 2px solid;
+}
+
+.two h3{
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
+}
+
+.three{
+    margin-top: 25px;
+    border: goldenrod 3px dotted;
+    border-radius: 12px;
+}
+
+.three li{
+    list-style: none; /* FOR NONE*/
+    list-style-image: url('apple.jpg');
+
+}
+
+.three a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.three a:hover{
+    color: tomato;
+}
+
+.four{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.four label{
+    display: block;
+}
+
+.four input[type="text"]{
+    width:100px;
+    height: 20px;
+}
+
+.dbl{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+.form_group:not(:last-child) {
+  margin-bottom: 5rem; }
+
+.form_input {
+  font-size: 20px;
+  padding: 10px 20px;
+  display: block; }
+  .form_input::-webkit-input-placeholder {
+    font-size: 20px; }
+
+.form_input:focus {
+  outline: none;
+  border-bottom: 3px solid blue; }
+  .form_input:focus:focus:invalid {
+    border-bottom: 3px solid red; }
+  .form_input:focus_label {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    transform: translateY(0); }
+
+.form_input:placeholder-shown ~ .form_label {
+  position: absolute;
+  transform: translateY(-2rem);
+  opacity: 0;
+  visibility: hidden; }
+
+.form_label {
+  display: block;
+  transition: all .5s; }

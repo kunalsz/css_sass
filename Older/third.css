@@ -1,0 +1,34 @@
+.main h1{ /* TO SELECT AN ELEMENT FROM A CLASS*/
+    color: red;
+    font-family: cursive;
+}
+.second{
+    border: 4px dotted #ccc;
+    margin: auto;
+    padding: 50px;
+}
+.links{
+    border:10px dotted #ccc;
+    margin: 10px;
+    font-size: 20px;
+}
+.links h1{
+    text-align: center;
+}
+a{  /* IT APPLIES TO ALL THE LINKS */
+    color: aqua;
+    text-decoration: none;
+}
+a:hover{  /* LINK OPTIONS*/
+    color: brown;
+    font-family: Gigi;
+    font-size: 30px;
+}
+.links li{
+    border-bottom: 5px solid #ccc;
+}
+
+
+
+
+

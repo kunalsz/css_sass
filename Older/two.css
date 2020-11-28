@@ -1,0 +1,30 @@
+/*
+*{  (* === ALL)
+    background-color: aqua
+}
+ FOR ALL
+*/
+body{
+    background-color: rebeccapurple;
+    font-family: Gigi;
+    font-size: 45;
+    line-height: 2
+    
+}
+h1{
+    color: lightblue
+}
+.Box{      /* DIV TAGS */
+    background-color: aqua;
+    font-family: Ariel;
+    
+}
+.container{
+    margin-left: 50
+}
+.main{
+    width: 70%;
+    margin: auto;
+    border: 5px red solid;
+    border-style:dotted;
+}

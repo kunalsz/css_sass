@@ -1,0 +1,13 @@
+@mixin change($break){
+    @if $break == phone{
+        @media(max-width: 600px){
+            @content;
+        }
+    }
+}
+
+.one{
+    @include change(phone){
+        background-color: yellow;
+    }
+}
