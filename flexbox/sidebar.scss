@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: red;
+
+    .ulist{
+        list-style: none;
+    }
+
+    .item{
+        position: relative;
+        &:first-child{
+            margin-top: 3rem;
+        }
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+
+        &-link:visited,
+        &-link:link{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            position: relative;  //REQUIRED
+            z-index: 10;    
+            padding: 1.3rem 0;
+        }
+
+        &-icon{
+            margin-left: 1.5rem;
+            width: 4rem;
+            height: 4rem;
+        }
+
+        &-text{
+            font-size: 1.6rem;
+            margin-left: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            background-color: yellow;
+            transform: scaleY(0);
+            transition: transform .3s,width .2s cubic-bezier(1,0,0,1) .3s;
+        }
+
+        &:hover::before{
+            transform: scaleY(1);
+            width: 100%;
+        }
+    }
+
+    .copy{
+        text-align: center;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
